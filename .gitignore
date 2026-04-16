@@ -1,0 +1,9 @@
+data/
+*.out
+__pycache__/
+*.csv
+saved/
+logs/
+.ipynb_checkpoints/
+.env
+wandb/

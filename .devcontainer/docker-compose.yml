@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    image: ngk_ml:latest
+    container_name: ngk_ml
+    volumes:
+      - ..:/workspace:cached
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    shm_size: '8gb'
+    tty: true
+    stdin_open: true
+    command: bash

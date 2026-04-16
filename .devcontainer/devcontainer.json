@@ -1,0 +1,25 @@
+{
+    "name": "NGK-ML",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "git config --global user.email \"takahara.k512@gmail.com\" && git config --global user.name \"takahara-k\" && git config --global --add safe.directory /workspace && git config --global url.\"https://${GITHUB_TOKEN}@github.com/\".insteadOf \"https://github.com/\"",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-python.isort",
+          "MS-CEINTL.vscode-language-pack-ja",
+          "ms-toolsai.jupyter",
+          "ms-azuretools.vscode-docker",
+          "mechatroner.rainbow-csv",
+          "janisdd.vscode-edit-csv",
+          "ionutvmi.path-autocomplete",
+          "yzhang.markdown-all-in-one",
+          "percy.vscode-pydata-viewer"
+        ]
+      }
+    }
+  }
+  
