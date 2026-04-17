@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     vim \
     graphviz \
+    libgl1-mesa-glx \
 && rm -rf /var/lib/apt/lists/*
 
 RUN ln -sf /usr/bin/python3.10 /usr/bin/python && \
